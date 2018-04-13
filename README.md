@@ -4,10 +4,12 @@ Projeto criado em Nodejs para atender ao desafio de criar uma API REST para gere
 
 ### Pré-requisitos
 
-Certifique-se que todos os requisitos necessário para o sistema funcionar estejam instalados.
+Certifique-se que todos os requisitos necessário para o sistema funcionar estejam instalados e configurados.
 
 * [Node.js](https://nodejs.org/en/download/) - 8.9
 * [MongoDB](https://www.mongodb.com/) - 3.6
+
+É importante apontar as instalação nas suas variaveis de ambiente, dessa forma podendo executar os softwares via linha de comando.
 
 ### Instalando e executando
 
@@ -21,6 +23,12 @@ Instale as dependencias do projeto
 ```
 cd contatos
 npm install
+```
+
+Em um terminal execute o comando abaixo para rodar uma instância do MongoDB localmente
+
+```
+mongod
 ```
 
 Rode a aplicação
@@ -53,6 +61,15 @@ Os endpoints das requisições são os seguintes:
 * DELETE - http://localhost:3000/:idContato - Deleta um contato
 * GET - http://localhost:3000/:size - Lista os contatos em uma determinada quantidade
 * GET - http://localhost:3000/:size/:page - Lista os contatos em uma determinada quantidade paginando os dados
+
+
+Para simular uma autenticação JWT, adicione ao **header** da sua requisição o seguinte:
+```
+{
+    "auth": "" // Qualquer valor
+}
+```
+Caso não seja adicionado, todos os endpoints retornaram **401 - Não autorizado**
 
 ## Reportando erros
 
