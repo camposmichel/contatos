@@ -6,8 +6,8 @@ Projeto criado em Nodejs para atender ao desafio de criar uma API REST para gere
 
 Certifique-se que todos os requisitos necessário para o sistema funcionar estejam instalados.
 
-[Node.js](https://nodejs.org/en/download/) - 8.9
-[MongoDB](https://www.mongodb.com/) - 3.6
+* [Node.js](https://nodejs.org/en/download/) - 8.9
+* [MongoDB](https://www.mongodb.com/) - 3.6
 
 ### Instalando e executando
 
