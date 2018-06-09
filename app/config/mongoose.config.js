@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-const dburl = 'mongodb://localhost/poccontatos';
+const dburl = process.env.MONGODB_URI || 'mongodb://localhost/poccontatos';
 
 mongoose.connect(dburl);
 
